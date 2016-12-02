@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	color: #fefefe;
+	font-family: 'Press Start 2P', cursive;
+}
+
+canvas, #score {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: -400px;
+	border: 2px solid #000;
+}
+
+#score {
+	flex-direction: column;
+	justify-content: center;
+	width: 500px;
+	height: 800px;
+	pointer-events: none;
+	box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5),
+				inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2),
+				0 -10px 15px -1px rgba(0, 0, 0, 0.6),
+				inset 0 3px 4px -1px rgba(0, 0, 0, 0.2),
+				inset 0 0 5px 1px rgba(0, 0, 0, 0.8),
+				inset 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+span {
+	display: block;
+	position: relative;
+	margin: 10px;
+	font-size: 100px;
+	text-shadow: -2px -2px 0 #000,
+			2px -2px 0 #000,
+		    -2px 2px 0 #000,
+		    2px 2px 0 #000;
+	z-index: 7;
+}
+
+.msg {
+	display: none;
+	margin-top: 50px;
+	color: yellow;
+	font-size: 80px;
+	text-shadow: 5px 5px 0 red;
+	z-index: -1;
+}
+
+.finished {
+	display: flex;
+	text-align: center;
+}
+
+.finished .msg {
+	display: block;
+}
