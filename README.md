@@ -4,6 +4,12 @@ This is only a experiment, made for sake of learning and experimenting in `p5*`.
 
 If you would also like to build interactive canvas apps visit [p5js.org](https://p5js.org/).
 
+# How to play
+
+Open the game here: [Example](https://ilicmarko.github.io/P5-Flappy-Bird-Clone/).
+
+Use `UP ARROW` to jump.
+
 # Structure
 
 Made with OOJS *(Object-Oriented JavaScript)*.

@@ -13,8 +13,8 @@ function setup() {
 	bird = new Bird();
 	lines.push(new Line());
 
-	jumpSound = loadSound('/p5/sound/jump.wav');
-	theEndSound = loadSound('/p5/sound/theend.wav');
+	jumpSound = loadSound('sound/jump.wav');
+	theEndSound = loadSound('sound/theend.wav');
 }
 
 function draw() {
@@ -69,7 +69,7 @@ function draw() {
 }
 
 function keyPressed() {
-	if (key = ' ') {
+	if (keyCode === UP_ARROW) {
 		jumpSound.play();
 		bird.jump();
 	}
